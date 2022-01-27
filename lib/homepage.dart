@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:nftgram/screens/profileScreen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,16 +18,14 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
+  static final List<Widget> _widgetOptions = <Widget>[
+    const Text(
       'Home',
     ),
-    Text(
+    const Text(
       'Search',
     ),
-    Text(
-      'Profile',
-    ),
+    const ProfileScreen(),
   ];
 
   @override
